@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — PrimeTI Tecnologia</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html"><img src="images/logo.png" alt="PrimeTI logo" class="logo" /></a>
+      <h1>PrimeTI Tecnologia</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicial</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="redes.html">Redes sociais</a>
+      <a href="valores.html">Valores</a>
+    </nav>
+  </header>
+
+  <main class="content contact-page">
+    <h2>Contato</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531990656645" target="_blank" rel="noopener">+55 (31) 99065-6645</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@primetitec.com.br">contato@primetitec.com.br</a></p>
+        <p><strong>Atendimento:</strong> Seg a Sex — 09:00 às 18:00</p>
+        <p><strong>Endereço:</strong> Pedro Leopoldo, MG</p>
+      </div>
+
+      <form id="contactForm" action="#" method="POST" onsubmit="handleSubmit(event)">
+        <label>Nome
+          <input type="text" name="name" id="name" required />
+        </label>
+
+        <label>E-mail
+          <input type="email" name="email" id="email" required />
+        </label>
+
+        <label>Assunto
+          <input type="text" name="subject" id="subject" required />
+        </label>
+
+        <label>Mensagem
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Enviar mensagem</button>
+          <a class="btn" href="https://wa.me/5531990656645" target="_blank" rel="noopener">Abrir WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> PrimeTI Tecnologia</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PrimeTI Tecnologia</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html"><img src="images/logo.png" alt="PrimeTI logo" class="logo" /></a>
+      <h1>PrimeTI Tecnologia</h1>
+    </div>
+    <nav class="nav">
+      <a href="sobre.html">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="redes.html">Redes sociais</a>
+      <a href="valores.html">Valores</a>
+      <a href="contato.html" class="btn">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="carousel" id="carousel" aria-roledescription="carousel">
+
+        <!-- Slide 1: Montagem -->
+        <div class="slide active">
+          <picture>
+            <source srcset="images/carousel-build-800.png" media="(max-width:800px)" type="image/webp">
+            <source srcset="images/carousel-build-1280.png" media="(max-width:1280px)" type="image/webp">
+            <source srcset="images/carousel-build-1920.png" type="image/webp">
+            <img src="images/carousel-build-1920.png" alt="Montagem e Customização de Computadores" />
+          </picture>
+          <div class="slide-caption">
+            <h2>Montagem e Customização de Computadores</h2>
+            <p>Máquinas sob medida para jogos, produtividade e servidores.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2: Manutenção -->
+        <div class="slide">
+          <picture>
+            <source srcset="images/carousel-maintenance-800.webp" media="(max-width:800px)" type="image/webp">
+            <source srcset="images/carousel-maintenance-1280.webp" media="(max-width:1280px)" type="image/webp">
+            <source srcset="images/carousel-maintenance-1920.webp" type="image/webp">
+            <img src="images/carousel-maintenance-1920.webp" alt="Manutenção de Computadores e Notebooks" />
+          </picture>
+          <div class="slide-caption">
+            <h2>Manutenção de Computadores e Notebooks</h2>
+            <p>Manutenções preventivas, corretivas e recuperação de dados.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3: Consultoria -->
+        <div class="slide">
+          <picture>
+            <source srcset="images/carousel-consulting-800.webp" media="(max-width:800px)" type="image/webp">
+            <source srcset="images/carousel-consulting-1280.webp" media="(max-width:1280px)" type="image/webp">
+            <source srcset="images/carousel-consulting-1920.webp" type="image/webp">
+            <img src="images/carousel-consulting-1920.webp" alt="Consultoria em TI" />
+          </picture>
+          <div class="slide-caption">
+            <h2>Consultoria em TI</h2>
+            <p>Estrutura tecnológica estratégica para o seu negócio.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4: Criação de Sites -->
+        <div class="slide">
+          <picture>
+            <source srcset="images/carousel-sites-800.webp" media="(max-width:800px)" type="image/webp">
+            <source srcset="images/carousel-sites-1280.webp" media="(max-width:1280px)" type="image/webp">
+            <source srcset="images/carousel-sites-1920.webp" type="image/webp">
+            <img src="images/carousel-sites-1920.webp" alt="Criação de Sites Institucionais e Informativos" />
+          </picture>
+          <div class="slide-caption">
+            <h2>Criação de Sites Institucionais e Informativos</h2>
+            <p>Presença digital eficiente e profissional.</p>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-btn prev" data-dir="prev" aria-label="Anterior">‹</button>
+        <button class="carousel-btn next" data-dir="next" aria-label="Próximo">›</button>
+        <div class="carousel-dots" id="carousel-dots" role="tablist"></div>
+      </div>
+    </section>
+
+    <section class="quick-contact">
+      <div>
+        <h3>Fale conosco</h3>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531990656645" target="_blank" rel="noopener">+55 (31) 99065-6645</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@primetitec.com.br">contato@primetitec.com.br</a></p>
+      </div>
+      <div class="cta">
+        <a class="btn-primary" href="contato.html">Solicitar Orçamento</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> PrimeTI Tecnologia — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
