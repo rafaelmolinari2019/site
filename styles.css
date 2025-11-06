@@ -70,3 +70,39 @@ main{max-width:var(--container);margin:26px auto;padding:0 18px}
   .logo{height:48px}
   .nav{display:none}
 }
+/* Menu padrão */
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+/* Botão hamburguer escondido em desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: rgba(11,58,100,0.95);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

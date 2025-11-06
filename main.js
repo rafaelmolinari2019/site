@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+  // ===== Carrossel =====
   const slides = Array.from(document.querySelectorAll('.carousel .slide'));
   const dotsWrapper = document.getElementById('carousel-dots');
   const prevBtn = document.querySelector('.carousel-btn.prev');
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let current = slides.findIndex(s => s.classList.contains('active'));
   if(current < 0) current = 0;
 
+  // Criar botões de navegação (dots)
   slides.forEach((_, i) => {
     const btn = document.createElement('button');
     btn.dataset.index = i;
@@ -36,17 +38,18 @@ document.addEventListener('DOMContentLoaded', function(){
   nextBtn.addEventListener('click', next);
   prevBtn.addEventListener('click', prev);
 
+  // autoplay
   let autoplay = setInterval(next, 6000);
   carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
   carousel.addEventListener('mouseleave', () => autoplay = setInterval(next, 6000));
 
-  // keyboard navigation
+  // navegação por teclado
   document.addEventListener('keydown', (e) => {
     if(e.key === 'ArrowRight') next();
     if(e.key === 'ArrowLeft') prev();
   });
 
-  // simple contact handler (contact page)
+  // ===== Formulário de contato =====
   window.handleSubmit = function(e){
     e.preventDefault();
     const form = document.getElementById('contactForm');
@@ -63,7 +66,16 @@ document.addEventListener('DOMContentLoaded', function(){
     form.reset();
   };
 
-  // fill footer year
+  // ===== Atualizar ano no rodapé =====
   const yearEls = document.querySelectorAll('#year');
   yearEls.forEach(el => el.textContent = new Date().getFullYear());
+
+  // ===== Menu responsivo =====
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  if(toggle && nav){
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  }
 });

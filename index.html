@@ -6,7 +6,7 @@
   <title>PrimeTI Tecnologia</title>
   <link rel="icon" href="images/favicon.ico" />
   <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
@@ -14,6 +14,10 @@
       <a href="index.html"><img src="images/logo.png" alt="PrimeTI logo" class="logo" /></a>
       <h1>PrimeTI Tecnologia</h1>
     </div>
+
+    <!-- Botão hamburguer -->
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
     <nav class="nav">
       <a href="sobre.html">Sobre nós</a>
       <a href="servicos.html">Serviços</a>
@@ -24,16 +28,17 @@
   </header>
 
   <main>
+    <!-- Carrossel -->
     <section class="hero">
       <div class="carousel" id="carousel" aria-roledescription="carousel">
 
-        <!-- Slide 1: Montagem -->
+        <!-- Slide 1 -->
         <div class="slide active">
           <picture>
-            <source srcset="images/carousel-build-800.png" media="(max-width:800px)" type="image/webp">
-            <source srcset="images/carousel-build-1280.png" media="(max-width:1280px)" type="image/webp">
-            <source srcset="images/carousel-build-1920.png" type="image/webp">
-            <img src="images/carousel-build-1920.png" alt="Montagem e Customização de Computadores" />
+            <source srcset="images/carousel-build-800.webp" media="(max-width:800px)" type="image/webp">
+            <source srcset="images/carousel-build-1280.webp" media="(max-width:1280px)" type="image/webp">
+            <source srcset="images/carousel-build-1920.webp" type="image/webp">
+            <img src="images/carousel-build-1920.webp" alt="Montagem e Customização de Computadores" />
           </picture>
           <div class="slide-caption">
             <h2>Montagem e Customização de Computadores</h2>
@@ -41,7 +46,7 @@
           </div>
         </div>
 
-        <!-- Slide 2: Manutenção -->
+        <!-- Slide 2 -->
         <div class="slide">
           <picture>
             <source srcset="images/carousel-maintenance-800.webp" media="(max-width:800px)" type="image/webp">
@@ -55,7 +60,7 @@
           </div>
         </div>
 
-        <!-- Slide 3: Consultoria -->
+        <!-- Slide 3 -->
         <div class="slide">
           <picture>
             <source srcset="images/carousel-consulting-800.webp" media="(max-width:800px)" type="image/webp">
@@ -69,7 +74,7 @@
           </div>
         </div>
 
-        <!-- Slide 4: Criação de Sites -->
+        <!-- Slide 4 -->
         <div class="slide">
           <picture>
             <source srcset="images/carousel-sites-800.webp" media="(max-width:800px)" type="image/webp">
@@ -90,6 +95,7 @@
       </div>
     </section>
 
+    <!-- Contato rápido -->
     <section class="quick-contact">
       <div>
         <h3>Fale conosco</h3>
@@ -106,8 +112,6 @@
     <p>© <span id="year"></span> PrimeTI Tecnologia — Todos os direitos reservados</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
-
